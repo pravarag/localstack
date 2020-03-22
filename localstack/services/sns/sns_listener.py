@@ -519,9 +519,6 @@ def get_message_attributes(req_data):
             elif binary_value is not None:
                 attribute['Value'] = binary_value
 
-            if attribute['Type'] == 'Number':
-                attribute['Value'] = float(attribute['Value'])
-
             attributes[name] = attribute
             x += 1
         else:
